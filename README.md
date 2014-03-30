@@ -3,7 +3,7 @@ WashDOT
 
 A library for fetching Washington State Department of Transportation data, written in PHP.
 
-__Source__: [Washington State DOT - Traveler Information API.](http://www.wsdot.wa.gov/traffic/api/)
+This library is based on the information provided on [Washington State DOT - Traveler Information API.](http://www.wsdot.wa.gov/traffic/api/). All available documentation is located there, and this is where you can request an API key (it's at the very bottom of the page).
 
 Documentation:
 ==============
@@ -53,14 +53,14 @@ $client->__setSoapHeaders(array(
   $headerAccessCode
 ));
  
-// Working Calls:
+// Successful Responses:
 $client->GetActiveScheduledSeasons();
 $client->GetAllAlerts();
 $client->GetAllTimeAdj();
 $client->GetCacheFlushDate();
 $client->GetValidDateRange();
 
-// Returning Exceptions:
+// Failing Responses:
 $client->GetAllRouteDetails();
 $client->GetAllRoutes();
 $client->GetAllRoutesHavingServiceDisruptions();
