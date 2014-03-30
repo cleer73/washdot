@@ -1,15 +1,19 @@
 {
-    "name": "cleer73/washdot",
-    "description": "A library for fetching Washington State Department of Transportation data, written in PHP.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Jacob Lee",
-            "email": "jake@cleer.net"
-        }
-    ],
-    "minimum-stability": "alpha",
-    "require": {
-
+  "name": "cleer73/washdot",
+  "description": "A library for fetching Washington State Department of Transportation data, written in PHP.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jacob Lee",
+      "email": "jake@cleer.net"
     }
+  ],
+  "minimum-stability": "alpha",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "WashDOT\\": "src/"
+    }
+  }
 }
